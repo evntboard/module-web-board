@@ -18,7 +18,7 @@ export const BoardText = ({button, extra}: Props) => {
       }}
     >
       <div
-        className='h-full w-full p-2 rounded-md flex items-center justify-center bg-center bg-cover bg-no-repeat overflow-hidden'
+        className='h-full w-full p-2 rounded-md flex items-center justify-center bg-center bg-cover bg-no-repeat overflow-hidden whitespace-pre-line'
         style={{
           backgroundColor: extra?.color ?? button.color,
           backgroundImage: `url(${extra?.image ?? button.image})`,

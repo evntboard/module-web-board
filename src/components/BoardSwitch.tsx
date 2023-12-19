@@ -41,7 +41,7 @@ export const BoardSwitch = ({button, extra}: Props) => {
         onMouseDown={onMouseDown}
         onMouseUp={onMouseUp}
         className={cn(
-          'flex flex-col h-full w-full p-2 rounded-md flex items-center justify-center bg-center bg-cover bg-no-repeat overflow-hidden',
+          'flex flex-col h-full w-full p-2 rounded-md flex items-center justify-center bg-center bg-cover bg-no-repeat overflow-hidden whitespace-pre-line',
           clicked && 'shadow-sm',
           !clicked && 'shadow-lg'
         )}
