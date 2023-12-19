@@ -15,7 +15,7 @@ export function App() {
   const emitButtonClick = useAppStore(state => state.emitButtonClick)
 
   const currentBoard = useMemo(() => {
-    return boards.find((b) => b.id === selectedBoardId)
+    return boards?.find((b) => b.id === selectedBoardId) ?? undefined
   }, [boards, selectedBoardId])
 
   const tpl = useMemo(() => {
